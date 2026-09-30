@@ -1,0 +1,54 @@
+.cell {
+    width: 75px;
+    height: 75px;
+    border: 2px solid;
+    box-shadow: 0 0 0 2px;
+    line-height: 75px;
+    font-size: 50px;
+    cursor: pointer;
+}
+
+#gameContainer {
+    font-family: "Permanent Marker", cursive;
+    text-align: center;
+}
+
+#cellContainer {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 75px);
+    width: 225px;
+    height: 225px;
+    margin: auto;
+}
+.winLine {
+    position: absolute;
+    height: 5px;
+    background-color: red;
+    border-radius: 5px;
+    z-index: 10;
+    pointer-events: none;
+    display: none;
+    transform-origin: center;
+}
+
+/* Winning line */
+.winLine {
+    position: absolute;
+    height: 9px;
+    background-color: red;
+    border-radius: 5px;
+    z-index: 10;
+    pointer-events: none;
+}
+#statusText {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+#restartBtn {
+    display: block;
+    margin: 15px auto 0;
+}
+
+
